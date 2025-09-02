@@ -4,6 +4,7 @@ int main(){
     float temperatura, umidade;
     unsigned int estoque, estoqueMinimo = 1000;
 
+    // Solicitar dados do armazém
     printf("Digite a temperatura do armazém: ");
     scanf("%f", &temperatura);
     printf("Digite a umidade do armazém: ");
@@ -11,6 +12,7 @@ int main(){
     printf("Digite o estoque atual do armazém: ");
     scanf("%u", &estoque);
 
+    // Verificar condições de segurança
     if(temperatura > 30){
         printf("Alerta: Temperatura alta no armazém!\n");
     } else {
